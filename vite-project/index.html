@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script type="module" src="./main.js" defer></script>
+
+
+    <title>Wallet</title>
+  </head>
+
+  <body>
+    <input type="checkbox" id="toggle">
+
+    <div class="container">
+    <p id="Welcome" class="txt">Welcome!</p>
+    <button class="btn " id="balance">Balance</button>
+    
+    <p id ="balance_txt" class="txt"></p>
+
+    <label for="amount" >amount:</label>
+    <input  type="number" id="amount" name="amount" placeholder="MAHi">
+    
+    <label for="to" >to:</label>
+    <input  type="text" id="to" name="to" placeholder="account Address">
+    
+    <p id ="warning">*Please fill the required fields</p>
+
+    <div class="transfering">
+    <button class="btn" id="transfer" onclick="transfer()" >Transfer</button>
+    <div id="loader"></div>
+    </div>
+  </div>  
+  </div>
+
+
+  </body>
+</html>
